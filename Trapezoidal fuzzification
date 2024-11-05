@@ -1,0 +1,19 @@
+#Trapezoidal Fuzzification
+x=int(input(" Enter Value of X : "))
+a=int(input(" Enter Value of a : "))
+b=int(input(" Enter Value of b : "))
+c=int(input(" Enter Value of c : "))
+d=int(input(" Enter Value of d : "))
+if a<=b and b<=c and c<=d :
+    if x<=a:
+        print(0)
+    if a<x and x<=b:
+        print((x-a)/(b-a))
+    if b<x and x<=c:
+        print(1)
+    if c<x and x<d:
+        print((d-x)/(d-c))
+    if x>=d:
+        print(0)
+else:
+    print("Enter Valid Inputs")
